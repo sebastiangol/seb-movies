@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# seb-movies
 
-## Getting Started
+This website is deployed using vercel: https://seb-movies.vercel.app/
 
-First, run the development server:
+This project is a website for browsing movies. It is based on Hulu. The project uses the React library with the Next.js framework. Tailwind CSS is used to style the application. The JIT compiler to help performance. The application's data is obtained from the The Movie Database API, providing movie posters, titles, descriptions, ratings etc. The application requests the movie objects to display them on the page.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The header component contains the website logo, and 6 buttons which show a label, color-change and animation when hovered over.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The navigation component contains all movie genres, which have a color-change and size-increase when hovered over, and a color change when clicked. The navigation bar also contains a side-scroll for the genres that cannot fit on the screen. When clicked, the URL will change, and a new request to the API will be performed. Only the movies associated with the clicked genre will be displayed in the results feed.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The results component displays the movies. The movies displayed depends on the API request, which depends on the page URL extension, which in turn depends on the genre clicked in the navigation bar.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+There is lazy loading built-in with Next.js, which helps performance as only the pictures that are needed are loaded.
+The Just-in-time compiler is used to render only what's needed in order to improve performance and user experience.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
