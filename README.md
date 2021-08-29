@@ -2,7 +2,7 @@
 
 This website is deployed using vercel: https://seb-movies.vercel.app/
 
-This project is a website for browsing movies. It is based on Hulu. The project uses the React library with the Next.js framework. Tailwind CSS is used to style the application. The JIT compiler to help performance. The application's data is obtained from the The Movie Database API, providing movie posters, titles, descriptions, ratings etc. The application requests the movie objects to display them on the page.
+This project is a website for browsing movies. It is based on Hulu. The project uses the React library with the Next.js framework. Tailwind CSS is used to style the application. Heroicons is used for the icons. The JIT compiler to help performance. The application's data is obtained from the The Movie Database API, providing movie posters, titles, descriptions, ratings etc. The application requests the movie objects to display them on the page.
 
 The website is responsive, adapting the page content to various screen sizes using TailwindCSS.
 
